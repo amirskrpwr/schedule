@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 
 class Modal extends Component {
-  state = {
-    id: this.props.task.id,
-    name: this.props.task.name,
-    time: this.props.task.time,
-    date: this.props.task.date,
-    description: this.props.task.description,
-    isDone: this.props.task.isDone,
-    isEnable: this.props.task.isEnable,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      id: this.props.task.id,
+      name: this.props.task.name,
+      time: this.props.task.time,
+      date: this.props.task.date,
+      description: this.props.task.description,
+      isDone: this.props.task.isDone,
+      isEnable: this.props.task.isEnable,
+    };
+    this.cbHandler = this.cbHandler.bind(this);
+  }
 
   reset = () => {
     this.setState({
@@ -36,6 +40,19 @@ class Modal extends Component {
       return;
     }
     this.props.updateTaskHandler(this.state);
+  };
+
+  cbHandler = () => {
+    this.setState({
+      isDone: !this.state.isDone,
+    });
+    this.props.updateTaskHandler(this.state);
+    console.log(
+      "state: ",
+      this.state.isDone,
+      "\nprops.task: ",
+      this.props.task.isDone
+    );
   };
 
   render() {
@@ -193,15 +210,10 @@ class Modal extends Component {
                                   <input
                                     class="form-check-input"
                                     type="checkbox"
-                                    id="check1"
+                                    id={"check " + this.state.id}
                                     name="option1"
-                                    defaultChecked={!this.state.isDone}
-                                    onChange={() => {
-                                      this.setState({
-                                        isDone: !this.state.isDone,
-                                      });
-                                      this.props.updateTaskHandler(this.state);
-                                    }}
+                                    defaultChecked={this.state.isDone}
+                                    onChange={this.cbHandler}
                                   />
                                 </div>
                               </div>

@@ -6,6 +6,7 @@ import AddTask from "./AddTask";
 
 function Tasks(props) {
   const [tasks, setTasks] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const retrieveTasks = async () => {
     const res = await api.get("/tasks");
@@ -56,23 +57,50 @@ function Tasks(props) {
   return (
     <div>
       {!props.addTask ? (
-        <div className="row">
-          {tasks.map((task) => (
-            <div
-              className={`${
-                props.row ? "col-lg-4 col-md-6 col-sm-12" : "col-sm-12 col-md-6"
-              }`}
-            >
-              <Task
-                key={task.id}
-                task={task}
-                coloring={props.coloring}
-                deleteTaskHandler={deleteTaskHandler}
-                updateTaskHandler={updateTaskHandler}
-                edit={props.edit}
-              />
-            </div>
-          ))}
+        <div>
+          <form className="form pt-5 pb-5">
+            <input
+              type="text"
+              name="searchBar"
+              id="searchBar"
+              placeholder="Search ..."
+              className="form-control"
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </form>
+          <div className="row">
+            {tasks
+              .filter((task) => {
+                if (searchTerm == "") {
+                  return task;
+                } else if (
+                  task.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                  task.description
+                    .toLowerCase()
+                    .includes(searchTerm.toLowerCase())
+                ) {
+                  return task;
+                }
+              })
+              .map((task) => (
+                <div
+                  className={`${
+                    props.row
+                      ? "col-lg-4 col-md-6 col-sm-12"
+                      : "col-sm-12 col-md-6"
+                  }`}
+                >
+                  <Task
+                    key={task.id}
+                    task={task}
+                    coloring={props.coloring}
+                    deleteTaskHandler={deleteTaskHandler}
+                    updateTaskHandler={updateTaskHandler}
+                    edit={props.edit}
+                  />
+                </div>
+              ))}
+          </div>
         </div>
       ) : (
         <AddTask addTaskHandler={addTaskHandler} />

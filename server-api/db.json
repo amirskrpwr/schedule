@@ -1,164 +1,65 @@
 {
   "tasks": [
     {
-      "id": "c3a4e1ca-c967-490a-b637-3639f7e41638",
-      "name": "Meeting with Doctor ",
-      "time": "15:30",
-      "date": "2021-10-31",
-      "description": "His office is fafdafa",
-      "isDone": false,
-      "isEnable": false
-    },
-    {
-      "id": "6c8e18a9-ac90-428d-a7e5-ebd1980a4012",
-      "name": "amirhossein",
-      "time": "14:02",
-      "date": "2021-10-31",
-      "description": "dffafda",
-      "isDone": true,
-      "isEnable": false
-    },
-    {
-      "id": "629d6240-4fab-4b63-9cdf-4763b279c959",
-      "name": "fdafdaf",
-      "time": "16:52",
-      "date": "2021-10-11",
-      "description": "fdafdafdaf",
-      "isDone": false,
-      "isEnable": false
-    },
-    {
-      "id": "901f000f-ab6f-4354-92ec-d6e1163f2f1a",
-      "name": "fafa",
-      "time": "16:53",
-      "date": "2021-11-10",
-      "description": "fafdafa",
-      "isDone": false,
-      "isEnable": true
-    },
-    {
-      "id": "c9bd9bbb-9c1f-4c79-987a-656cf5232fe4",
-      "name": "fdafadfda",
-      "time": "16:53",
-      "date": "2021-11-18",
-      "description": "fafafa",
-      "isDone": false,
-      "isEnable": true
-    },
-    {
-      "id": "7d92bc17-f821-4747-a873-8a13020146d7",
-      "name": "dfafa",
-      "time": "16:55",
-      "date": "2021-11-18",
-      "description": "fdafa",
-      "isDone": false,
-      "isEnable": true
-    },
-    {
-      "id": "fc8c097d-c70b-4e3a-9cd1-e37dac709464",
-      "name": "fdafdadf",
-      "time": "19:52",
-      "date": "2021-11-30",
-      "description": "fdafdafa",
-      "isDone": false,
-      "isEnable": true
-    },
-    {
-      "id": "c9d55517-c72d-45e3-8158-c9749da52a1b",
-      "name": "fafdaf",
-      "time": "16:56",
-      "date": "2021-12-01",
-      "description": "fafaf",
-      "isDone": false,
-      "isEnable": true
-    },
-    {
-      "id": "082ad0da-941f-4104-81c6-60a36b87b0b0",
-      "name": "asfdafaf",
-      "time": "16:00",
-      "date": "2021-11-19",
-      "description": "fdafdaf",
-      "isDone": false,
-      "isEnable": true
-    },
-    {
-      "id": "01b46ed1-e7fa-498f-accb-f272d0453710",
-      "name": "amirsaeedjavadsalman",
-      "time": "19:58",
-      "date": "2021-10-31",
-      "description": "fdafda",
-      "isDone": false,
-      "isEnable": false
-    },
-    {
-      "id": "09eb6bc9-3e7e-4bd2-9d7b-2cbabf97d99f",
-      "name": "fafdafa",
-      "time": "16:02",
-      "date": "2021-11-11",
-      "description": "dafaf",
-      "isDone": false,
-      "isEnable": true
-    },
-    {
-      "id": "d2ce0fb6-3fdf-44f1-9518-3e02b16ac0c5",
-      "name": "fafdafa",
-      "time": "17:04",
-      "date": "2021-11-18",
-      "description": "fdafas",
-      "isDone": false,
-      "isEnable": true
-    },
-    {
-      "id": "1aa032db-be7b-4e25-89ce-eca977e670e1",
-      "name": "fdafaf",
-      "time": "17:05",
-      "date": "2021-10-31",
-      "description": "fdafda",
-      "isDone": false,
-      "isEnable": false
-    },
-    {
-      "id": "db1ad9c6-58f1-4230-8822-f744a0c9c6f6",
-      "name": "fdasfa",
-      "time": "17:12",
-      "date": "2021-11-17",
-      "description": "fafaf",
-      "isDone": false,
-      "isEnable": true
-    },
-    {
-      "id": "bb1e181f-b733-4c7a-bf51-749e945538ec",
-      "name": "amirihossein ey vay ....",
-      "time": "17:12",
-      "date": "2021-10-31",
-      "description": "fdafda",
-      "isDone": false,
-      "isEnable": false
-    },
-    {
-      "id": "2a0cd6b4-93f7-4412-bfe9-6e6803bf1977",
-      "name": "afafaf",
-      "time": "21:22",
-      "date": "2021-12-03",
-      "description": "dfaaf",
-      "isDone": false,
-      "isEnable": true
-    },
-    {
       "id": "f7fe2012-7297-4da2-9a06-bc348528cd89",
-      "name": "dfafaf",
-      "time": "21:23",
-      "date": "2021-10-31",
-      "description": "faafafda",
+      "name": "MIS exam",
+      "time": "10:00",
+      "date": "2021-12-02",
+      "description": "This exam is the midterm exam of the \"Management Information Systems\".",
       "isDone": false,
-      "isEnable": false
+      "isEnable": true
     },
     {
       "id": "141f1f00-36e4-45eb-8859-799b257e2a89",
-      "name": "fdafaf",
-      "time": "17:44",
-      "date": "2021-11-25",
-      "description": "afafda",
+      "name": "Presentation of the Special courses",
+      "time": "10:00",
+      "date": "2021-12-06",
+      "description": "This Presentation will begin after 10 Am and is the last presentation of that day with the topic of \"IIS security\".",
+      "isDone": null,
+      "isEnable": true
+    },
+    {
+      "id": "9ac4ac08-14df-4e8b-8bbc-4af86b20ed7d",
+      "name": "Special courses exam",
+      "time": "10:00",
+      "date": "2021-11-22",
+      "description": "This exam is the midterm of the special cources.",
+      "isDone": null,
+      "isEnable": true
+    },
+    {
+      "id": "89a56184-ff39-43fc-b056-a4b73187a41b",
+      "name": "Dentist Appointment",
+      "time": "08:00",
+      "date": "2021-11-17",
+      "description": "This Appointment is going to be at the dentist college of Mashhad.",
+      "isDone": null,
+      "isEnable": true
+    },
+    {
+      "id": "0ff94ca2-b13e-4d71-9615-9964802d489d",
+      "name": "Implementation of database systems exam",
+      "time": "00:00",
+      "date": "2021-11-23",
+      "description": "this exam will be in the 10th educational week and this exam is the midterm exam.",
+      "isDone": null,
+      "isEnable": true
+    },
+    {
+      "id": "bffc65c1-8864-4cdd-a54e-af328446e521",
+      "name": "Presentation of the MIS",
+      "time": "10:00",
+      "date": "2021-12-09",
+      "description": "This presentation will be after 10 Am with the top of \"Digikala's business model in the theoretical view of MIS\".",
+      "isDone": null,
+      "isEnable": true
+    },
+    {
+      "id": "2ec41fab-75b6-4de7-91a7-3232bf2e7894",
+      "name": "Ariba Interview",
+      "time": "15:45",
+      "date": "2021-11-17",
+      "description": "Address: \"Ahmad abad, Abouzar , between Abouzar 20 and 22, block 212.\"",
       "isDone": null,
       "isEnable": true
     }

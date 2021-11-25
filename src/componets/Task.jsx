@@ -73,7 +73,7 @@ function Task(props) {
   };
 
   return (
-    <div className="container mt-3">
+    <div className="mb-4">
       <div className="card">
         <h3
           style={{
@@ -123,6 +123,7 @@ function Task(props) {
           {props.edit ? (
             <div>
               <Modal
+                key={"check " + task.id}
                 type="Edit"
                 task={props.task}
                 updateTaskHandler={props.updateTaskHandler}

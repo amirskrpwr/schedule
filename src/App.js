@@ -14,13 +14,13 @@ class App extends Component {
           <div className="container" style={{ marginTop: "70px" }}>
             <div className="mt-3 mb-3">
               <Switch>
-                <Route key="1" path="/" exact component={HomePage} />{" "}
-                <Route key="2" path="/create-task" component={CreateTaskPage} />{" "}
-                <Route key="3" path="/Edit-task" component={EditTaskPage} />{" "}
-              </Switch>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
+                <Route key="1" path="/" exact component={HomePage} />
+                <Route key="2" path="/create-task" component={CreateTaskPage} />
+                <Route key="3" path="/Edit-task" component={EditTaskPage} />
+              </Switch>
+            </div>
+          </div>
+        </div>
       </Router>
     );
   }
